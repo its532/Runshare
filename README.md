@@ -5,7 +5,7 @@
 
 ### 環境構築
 
-Server Side: Firebase
+Server Side: Firebase</br>
 Frontend: React(Redux)
 Docker
 
