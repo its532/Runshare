@@ -25,4 +25,4 @@ Email　test@test.jp　Pw 123456　でログインできます
  コンテナ停止</br>
  `docker-compose down`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
