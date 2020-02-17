@@ -9,6 +9,8 @@ Server Side: Firebase</br>
 Frontend: React(Redux)</br>
 Docker
 
+Email　test@test.jp　Pw 123456　でログインできます
+
 イメージをビルド</br>
 `docker-compose build`
 
