@@ -32,5 +32,5 @@ Cannot read property 'apply' of undefined</br>
 エラーが出る場合がありますので
 redux dev toolsをコメントアウトしています</br>
 
-src/redux/store.js
+src/redux/store.js</br>
 `window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__()`
