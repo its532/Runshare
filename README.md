@@ -28,8 +28,9 @@ Email　test@test.jp　Pw 123456　でログインできます
  コンテナ停止</br>
  `docker-compose down`
 
-Cannot read property 'apply' of undefined
+Cannot read property 'apply' of undefined</br>
 エラーが出る場合がありますので
-redux dev toolsをコメントアウトしています
+redux dev toolsをコメントアウトしています</br>
 
+src/redux/store.js
 `window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__()`
