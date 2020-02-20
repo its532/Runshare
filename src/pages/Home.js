@@ -55,15 +55,16 @@ class Home extends Component {
     );
     return (
       <Fragment>
-        <div className={classes.home}>
-          <img src={runshare} className={classes.image} />
-          <p className={classes.content}>Runshare</p>
-          <p className={classes.contentsub}>
-            あなたのおすすめのランニングコース、ウォーキングコースを共有しよう
-          </p>
-        </div>
         <Grid container spacing={10}>
           <Grid item sm={12} xs={12}>
+            <div className={classes.home}>
+              <img src={runshare} alt="homeimage" className={classes.image} />
+              <p className={classes.content}>Runshare</p>
+              <p className={classes.contentsub}>
+                あなたのおすすめのランニングコース、ウォーキングコースを共有しよう
+              </p>
+            </div>
+
             {Readlist}
           </Grid>
           {/* <Grid item sm={4} xs={12}>
