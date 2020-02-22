@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Profile from "./Profile";
+import { withRouter } from "react-router";
 
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
@@ -92,7 +93,8 @@ class Navbar extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    const newPath = "/scream";
+    this.props.history.push("/search");
+    const newPath = "/search";
     window.history.pushState(null, null, newPath);
     this.setState({ newPath });
     this.props.searchLists({ body: this.state.body });
@@ -176,7 +178,9 @@ const mapStateToProps = state => ({
   user: state.user
 });
 
-export default connect(
-  mapStateToProps,
-  { searchLists }
-)(withStyles(styles)(Navbar));
+export default withRouter(
+  connect(
+    mapStateToProps,
+    { searchLists }
+  )(withStyles(styles)(Navbar))
+);

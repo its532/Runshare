@@ -1,21 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 // import axios from "axios";
 import PropTypes from "prop-types";
+import List from "../components/List";
 
 import { connect } from "react-redux";
 import { getLists } from "../redux/actions/PostActions";
 
 class SearchHome extends Component {
-  // state = {
-  //   lists: null
-  // };
+  componentDidMount() {
+    this.props.getLists();
+  }
 
   render() {
-    return (
-      <div>
-        <h1>Search</h1>
-      </div>
+    const { lists, loading } = this.props.post;
+
+    let searchlist = !loading ? (
+      lists.map(list => <List key={list.screamId} list={list} />)
+    ) : (
+      <p>Loading</p>
     );
+    return <Fragment>{searchlist}</Fragment>;
   }
 }
 SearchHome.propTypes = {

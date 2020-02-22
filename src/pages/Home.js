@@ -67,9 +67,6 @@ class Home extends Component {
 
             {Readlist}
           </Grid>
-          {/* <Grid item sm={4} xs={12}>
-          <Profile />
-        </Grid> */}
         </Grid>
       </Fragment>
     );
