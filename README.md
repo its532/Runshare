@@ -10,7 +10,7 @@
 <h4>サーバー側のコードはRunshare-serverリポジトリ</h4>
 
 
-### 環境構築
+<!-- ### 環境構築
 
 Server Side: Firebase</br>
 Frontend: React(Redux)</br>
@@ -29,4 +29,4 @@ Email　test@test.jp　Pw 123456　でログインできます
  
  コンテナ停止</br>
  `docker-compose down`
-
+ -->
